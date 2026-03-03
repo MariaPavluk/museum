@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Россия - моя История</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0a1931 0%, #1a1a2e 100%);
+            color: #ffffff;
+            padding: 2rem 1rem;
+            text-align: center;
+            border-bottom: 1px solid #333;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+        }
+
+        .logo i {
+            font-size: 2.5rem;
+            margin-right: 15px;
+            color: #4a9eff;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+            color: #ffffff;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            font-weight: 300;
+            max-width: 800px;
+            margin: 0 auto;
+            color: #b0b0b0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        .intro {
+            background-color: #1e1e1e;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-left: 5px solid #4a9eff;
+            border: 1px solid #333;
+        }
+
+        .intro p {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            color: #cccccc;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .photo-card {
+            background-color: #1e1e1e;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #333;
+        }
+
+        .photo-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-bottom: 4px solid #4a9eff;
+        }
+
+        .photo-info {
+            padding: 1.5rem;
+        }
+
+        .photo-title {
+            font-size: 1.4rem;
+            color: #4a9eff;
+            margin-bottom: 0.8rem;
+            font-weight: 600;
+        }
+
+        .photo-desc {
+            color: #b0b0b0;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .photo-period {
+            display: inline-block;
+            background-color: #2a2a2a;
+            color: #4a9eff;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            border: 1px solid #333;
+        }
+
+        footer {
+            background-color: #0a1931;
+            color: #cccccc;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+            border-top: 1px solid #333;
+        }
+
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .footer-content p {
+            margin-bottom: 1rem;
+        }
+
+        .footer-icons {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .footer-icons a {
+            color: #cccccc;
+            font-size: 1.5rem;
+        }
+
+        .footer-icons a:hover {
+            color: #4a9eff;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+            
+            .subtitle {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=107020786', 'ym');
+
+    ym(107020786, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/107020786" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<body>
+    <header>
+        <div class="logo">
+            <i class="fas fa-landmark"></i>
+            <h1>Россия - моя История</h1>
+        </div>
+        <p class="subtitle">Знакомство с историей нашей страны через фотографии и описания ключевых событий и мест</p>
+    </header>
+
+    <div class="container">
+        <section class="intro">
+            <p>Центр Исторический парк «Россия – Моя история» – это «живой учебник» по истории нашей страны с древнейших времен до наших дней. Уникальность парка в том, что история здесь представлена с помощью различных современных технологий:
+
+                - интерактивные тач-панели и проекции
+                - 3D-модели зданий и городов
+                - мультимедийные реконструкции исторических сражений.</p>
+        </section>
+
+        <section class="gallery">
+            <!-- Карточка 1 -->
+            <div class="photo-card">
+                <img src="1.jpg" alt="Дисплей" class="photo-img">
+                <div class="photo-info">
+                    <h3 class="photo-title">Интерактивные экспонаты</h3>
+                    <p class="photo-desc">Дисплеи, на которых можно прочитать интересные факты из нашей истории.</p>
+
+                </div>
+            </div>
+
+            <!-- Карточка 2 -->
+            <div class="photo-card">
+                <img src="2.jpg" alt="Дисплей" class="photo-img">
+                <div class="photo-info">
+                    <h3 class="photo-title">Светящиеся экспонаты</h3>
+                    <p class="photo-desc">Красиво светится)</p>
+
+                </div>
+            </div>
+
+            <!-- Карточка 3 -->
+            <div class="photo-card">
+                <img src="3.jpg" alt="Дисплей" class="photo-img">
+                <div class="photo-info">
+                    <h3 class="photo-title">Цифровые «книги памяти»</h3>
+                    <p class="photo-desc"> Возможность найти интересную информацию, связанную с ключевыми событиями, или проследить личную историю через призму глобальных процессов.</p>
+
+                </div>
+            </div>
+
+            <!-- Карточка 4 -->
+            <div class="photo-card">
+                <img src="4.jpg" alt="Дисплей" class="photo-img">
+                <div class="photo-info">
+                    <h3 class="photo-title">Кижский погост</h3>
+                    <p class="photo-desc">В экспозициях Исторического парка школьники смогут изучить гербы городов и поселков, погрузиться в тему освоения и создания первых поселений на территории нашего края. Познакомят ребят и с культурными особенностями нашей области.</p>
+                </div>
+            </div>
+
+            <!-- Карточка 5 -->
+            <div class="photo-card">
+                <img src="5.jpg" alt="Дисплей" class="photo-img">
+                <div class="photo-info">
+                    <h3 class="photo-title">Интересные постановки</h3>
+                    <p class="photo-desc">Особое внимание было уделено событиям прорыва и полного снятия блокады, знаменующим конец ужасающих испытаний.</p>
+                </div>
+            </div>
+
+            <!-- Карточка 6 -->
+            <div class="photo-card">
+                <img src="6.jpg" alt="Дисплей" class="photo-img">
+                <div class="photo-info">
+                    <h3 class="photo-title">Факты о Ленинграде</h3>
+                    <p class="photo-desc">В рамках проекта представлены электронные образы документов и фотографий, раскрывающие в популярной форме, но с опорой на проверенные, очищенные от легенд и измышлений факты о блокаде Ленинграда и героизме его защитников.</p>
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>Музей в Тюмени "Россия - моя История"</p>
+            <p>Этот сайт создан в образовательных целях студентами)</p>
+        </div>
+    </footer>
+</body>
+</html>
